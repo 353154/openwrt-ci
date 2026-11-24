@@ -20,3 +20,6 @@ chmod 755 files/etc/openclash/core/clash_meta
 # 更新并安装 feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+# 禁用 Rust CI LLVM 下载，避免上游 ci-artifacts 404 导致编译失败
+sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/g' feeds/packages/lang/rust/Makefile
