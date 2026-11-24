@@ -141,5 +141,5 @@ jobs:
           - 带 WIFI 与有线 NSS 的 6.12 内核（25.12-nss 分支）
           - 已裁剪冗余后台插件，优化 512MB 内存占用，预置 ARM64 Clash Meta 内核
           - 源码: ${{ env.REPO_URL }} (${{ env.REPO_BRANCH }})
-          - 默认地址: 192.168.1.1 / 默认密码: password
+          - 默认地址: 192.168.10.1 / 默认密码: password
           - ${{ env.VERSION_INFO }}
