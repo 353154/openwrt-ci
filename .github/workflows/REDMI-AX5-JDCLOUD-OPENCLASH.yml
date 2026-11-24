@@ -2,6 +2,13 @@ name: Redmi-AX5-JDCloud-OpenClash
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'configs/redmi-ax5-jdcloud.config'
+      - 'diy-redmi-ax5-jdcloud.sh'
+      - '.github/workflows/REDMI-AX5-JDCLOUD-OPENCLASH.yml'
 
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
